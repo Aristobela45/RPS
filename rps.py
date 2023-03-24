@@ -7,17 +7,33 @@
 # -- Vice versa for other decisions.
 
 # Continue to ask the player for their input until they say "I quit", at which time the game will then end and display ("Thank you for playing").
+
+
+print("Hello, and welcome to COMPUTERIZED ROCK-PAPER-SCISSORS v1.0")
+
 from random import randint
+
 while True:
     # Ask the player to select a move and store it.
     player_choice = input(
         "Choose 'rock', 'paper', 'scissors', or type 'quit'. ").lower()
     cpu_choice = ""
+    
+    
+    #If player chooses to quit, the game will end and display ("Thank you for playing").
+         
+    #Computer chooses an option after the player and store it. 
+    
+    #Both selections will be compared.
+   
+    #If selections are the same, print it's a tie.
+
 
     # If player chooses to quit, the game will end and display ("Thank you for playing").
     if player_choice == "quit":
         print("Thank you for playing")
         break
+
 
     # Computer chooses an option and store it.
     random_number = randint(1, 3)
